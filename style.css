@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+:root {
+    --primary-color: #669ccb;
+    --primary-color-dark: #5681a7;
+    --secondary-color: white;
+    --text-dark: #282d31;
+    --text-light: #767268;
+    --extra-light:#f3f4f6;
+    --max-width:1200px;
+}
+
+* {
+    padding: 0;
+    margin: 2;
+    box-sizing: border-box;
+}
+
+.section_container {
+    padding: 5rem rem;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.section_title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section_subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+body {
+    font-family: "Robot", sans-serif;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo a {
+text-decoration: none;
+color: var(--extra-light);
+font-size: 1.5rem;
+color: yellow;
+}
+
+.nav_links {
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link {
+    color: var(--extra-light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+    color: yellow;
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
+header {
+    height: 130vh;
+    background-image: linear-gradient(rgba(45,92,132,.5),rgba(45,92,132,.5)),
+    url(8.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 152vh;
+}
+
+header .section_content {
+    height: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: var(--extra-light);
+}
+
+.header_content h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.header_content {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .nav_links{
+        display: flex;
+    }
+
+
+   .header_content{
+    max-width: 400px;
+    align-items: flex-start;
+   }
+
+}
+
+.container p {
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+#check {
+    display: none;
+}
+
+ ul {
+    text-align: left;
+}
+
+.content {
+    display: none;
+   
+}
+
+label {
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+    border-style: var(--secondary-color);
+}
+
+#check:checked ~ .content {
+     display: block;
+}
+
+#check:checked ~ label {
+    display: none;
+}
+
+.header2 {
+    height: 100vh;
+    background-image: none;
+    background-color: rgb(12, 7, 7);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header2_content h1 {
+    height: 10vh;
+    text-align: center;
+    font-size: 70px;
+    color:white;
+    font-style: italic;
+  
+}
+
+
+.header3 {
+    height: 500vh;
+    background-image: linear-gradient(rgba(45,92,132,.5),rgba(45,92,132,.5)),
+    url(services.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul a{
+    color: yellow;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+    border-radius: 12px;
+    justify-content: left;
+   display: inline-block;
+
+   
+}
+
+button{
+  border-radius: 12px;
+  height: 250px;
+  width: 300px;
+  margin: 4px 8px;
+  box-shadow: rgba(0, 0, 0, 0.3);
+  
+
+  }
+
+
+button a {
+    text-align: center;
+}
+
+.places h2 {
+   margin: 8px;
+}
+
+.header2 h1{
+   height: 2cm;
+
+    }
+
+
+.body1 {
+    background-color: #d1dbdf;
+   text-align: center;
+   h1{
+  font-style: italic;
+  }
+    h2{
+ text-align: center;
+ 
+  }
+    }
+
+
+ 
+.column {
+  float: left;
+  height: 9cm;
+  justify-content: center;
+}
+
+
+.tours{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 20cm;
+    
+}
+
+.img {
+    background-image: none;
+    background-color: rgb(15, 9, 9);
+    height: 100vh;
+    width: 100%;
+}
+    
+    
+
+
+
